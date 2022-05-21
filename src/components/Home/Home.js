@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../Banner/Banner";
+import History from "../History/History";
 import Inventories from "../Inventories/Inventories";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
+      <History></History>
       <Inventories></Inventories>
       <Link className=" text-decoration-none" to={"/manageitems"}>
         <div className="d-flex justify-content-center mt-5">
