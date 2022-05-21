@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import logo from "../../Images/Logo/logo-98x88.png";
-
+import './Header.css'
 const Header = () => {
   const [user] = useAuthState(auth);
   const handleSignOut = () => {

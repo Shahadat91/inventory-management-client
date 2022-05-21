@@ -2,9 +2,9 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div>
+    <div className="container">
       <div>
-        <h4>Difference between javascript and node js.</h4>
+        <h4>Q-1: Difference between javascript and node js.</h4>
         <p>
           Javascript is a programming language that is used for writing scripts
           on the website. Javascript can only be run in the browsers.It is
@@ -19,7 +19,7 @@ const Blogs = () => {
         </p>
       </div>
       <div>
-        <h4>Differences between sql and nosql databases.</h4>
+        <h4>Q-2: Differences between sql and nosql databases.</h4>
         <p>
           SQL databases are primarily called as Relational Databases (RDBMS);
           whereas NoSQL database are primarily called as non-relational or
@@ -67,7 +67,7 @@ const Blogs = () => {
         </p>
       </div>
       <div>
-        <h4>When should you use `nodejs` and when should you use `mongodb` </h4>
+        <h4>Q-3: When should you use `nodejs` and when should you use `mongodb` </h4>
         <p>
           When to use MongoDB? MongoDB can be used in places that require simple
           queries, easy and fast integration of data and have data whose
