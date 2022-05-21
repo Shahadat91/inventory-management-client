@@ -6,7 +6,7 @@ const AddItems = (event) => {
     const { register, handleSubmit } = useForm();
   const onSubmit = data =>{ 
       console.log(data);
-      const url = `http://localhost:5000/inventory`;
+      const url = `https://pacific-sea-12697.herokuapp.com/inventory`;
       fetch(url, {
          method:'POST',
          headers: {
@@ -20,7 +20,7 @@ const AddItems = (event) => {
           toast('item added successfully');
       })
 
-      const url2 = `http://localhost:5000/myItems`;
+      const url2 = `https://pacific-sea-12697.herokuapp.com/myItems`;
       fetch(url2, {
          method:'POST',
          headers: {

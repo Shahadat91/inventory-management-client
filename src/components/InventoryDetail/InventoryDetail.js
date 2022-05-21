@@ -23,7 +23,7 @@ useEffect(()=>{
 const deliveredItem = () =>{
   const quantity = parseInt(inventoryData.quantity) - 1;
   //const updateQuantity = {quantity};
-  const url = `http://localhost:5000/updateq/${inventoryId}`;
+  const url = `https://pacific-sea-12697.herokuapp.com/updateq/${inventoryId}`;
   fetch(url, {
     method: 'PUT',
     headers: {
@@ -44,7 +44,7 @@ const deliveredItem = () =>{
 const updateItem = event =>{
    event.preventDefault();
    const quantity = parseInt(inventoryData.quantity) + parseInt(event.target.quantity.value);
-   const url = `http://localhost:5000/updateq/${inventoryId}`;
+   const url = `https://pacific-sea-12697.herokuapp.com/updateq/${inventoryId}`;
 
    fetch(url, {
      method: 'PUT',

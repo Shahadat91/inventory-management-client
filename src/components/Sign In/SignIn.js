@@ -30,7 +30,7 @@ const SignIn = () => {
     const password = passwordRef.current.value;
     //console.log(email, password);
     await signInWithEmailAndPassword(email, password);
-    const {data} = await axios.post('http://localhost:5000/signin', {email});
+    const {data} = await axios.post('https://pacific-sea-12697.herokuapp.com/signin', {email});
     //console.log(data);
     localStorage.setItem('accessToken', data.accessToken);
     navigate(from, { replace: true });
