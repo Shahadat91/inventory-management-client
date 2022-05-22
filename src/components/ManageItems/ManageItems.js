@@ -3,11 +3,12 @@ import { Button, Card } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import UseInventory from "../../hooks/useInventory";
 
+
 const ManageItems = () => {
   const {inventoryId}= useParams();
   const [inventories, setInventories] = UseInventory([]);
 
- 
+
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure you want to delete this item?");
     if (proceed) {
