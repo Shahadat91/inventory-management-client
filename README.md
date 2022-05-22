@@ -6,18 +6,18 @@
 * This website is about a wear house management.
 * It's contain a brief description about inventory product.
 * Some items display on home page.
-*All items are on manage items page.
-*Anyone add item by clicking on add item button and he/she able to see his/her item on my items page.
+* All items are on manage items page.
+* Anyone add item by clicking on add item button and he/she able to see his/her item on my items page.
 
 
 
 #List of technologies used in this project:
  * React Router
- *react-firebase-hooks
- *React hooks form
+ * react-firebase-hooks
+ * React hooks form
  * React Router hook
  * React Bootstrap
- *React font awesome
+ * React font awesome
  * Google Firebase
 
 
