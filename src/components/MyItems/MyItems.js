@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate} from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 
@@ -39,10 +40,10 @@ const MyItems = () => {
 
     },[user]);
 
-    const handleDelete = (id) => {
+    const handleDeleteMyItems = (id) => {
         const proceed = window.confirm("are you sure you want to delete this item?");
         if (proceed) {
-          const url = `https://pacific-sea-12697.herokuapp.com/myItems/${id}`;
+          const url = `https://pacific-sea-12697.herokuapp.com/myItem/${id}`;
           fetch(url, {
             method: "DELETE",
           })
@@ -50,9 +51,9 @@ const MyItems = () => {
             .then((data) => {
               console.log(data);
               const remaining = myItems.filter(
-                (myItem) => myItem._id !== id
-              );
+                (myItem) => myItem._id !== id);
               setMyItems(remaining);
+              toast('item deleted successfully');
             });
         }
       };
@@ -71,7 +72,7 @@ const MyItems = () => {
               <Card.Text>Price: $ {myItem.price}</Card.Text>
               <Card.Text>{myItem.description}</Card.Text>
               <Button
-                 onClick={() => handleDelete(myItem._id)}
+                 onClick={() => handleDeleteMyItems(myItem._id)}
                 variant="primary">
                 Delete
               </Button>

@@ -31,7 +31,7 @@ const AddItems = (event) => {
       .then(res => res.json())
       .then(result =>{
           console.log(result);
-          toast('item added successfully');
+          //toast('item added successfully');
       })
     };
     return (
