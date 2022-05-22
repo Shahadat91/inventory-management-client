@@ -1,0 +1,11 @@
+@media only screen and (max-width:576px) {
+
+    .history-title{
+        font-size: 18px;
+        margin: 0;
+    }
+    .history-img{
+        width: 350px;
+        height: auto;
+    }
+}

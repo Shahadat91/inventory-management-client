@@ -1,13 +1,14 @@
 import React from "react";
 import historyImage1 from "../../Images/Img/modern_furniture_designers.webp";
 import historyImage2 from "../../Images/Img/akracing-intro-2021.webp";
+import './History.css';
 
 const History = () => {
   return (
     <div className="container m-5">
-      <h2 className="text-center m-5">History of the Modern Chair</h2>
+      <h2 className="history-title text-center m-5">History of the Modern Chair</h2>
       <div className="d-flex justify-content-center m-5">
-        <img src={historyImage1} alt="" />
+        <img className="history-img" src={historyImage1} alt="" />
       </div>
       <p>
         The modern chair is something that perhaps we take for granted, but its
@@ -22,9 +23,9 @@ const History = () => {
         furniture designed amidst a general conceptualization that more is not
         better.
       </p>
-      <h2 className="text-center m-5">History Of Gaming Chairs</h2>
+      <h2 className="history-title text-center m-5">History Of Gaming Chairs</h2>
       <div className="d-flex justify-content-center m-5">
-        <img src={historyImage2} alt="" />
+        <img className="history-img" src={historyImage2} alt="" />
       </div>
 
       <p>

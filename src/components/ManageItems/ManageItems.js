@@ -52,7 +52,7 @@ const ManageItems = () => {
       </div>
       <div>
           <Link to="/additems/:inventoryId">
-          <button className="btn btn-outline-info mt-5 w-25">Add New Item</button>
+          <button className="btn btn-outline-info mt-5">Add New Item</button>
           </Link>
       </div>
     </div>

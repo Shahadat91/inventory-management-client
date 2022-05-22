@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer">
-        <div className=" d-flex justify-content-between align-items-center">
+        <div className="footer-style">
           <div className="mt-3">
             <h5>Contact us</h5>
             <p className="mb-0">Email: support@chairbazar.com</p>
