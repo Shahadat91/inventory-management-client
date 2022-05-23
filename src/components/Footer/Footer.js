@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <small>
-          Copyright &copy; {year} Wild Photographer All Rights Reserved
+          Copyright &copy; {year} Chair Bazar All Rights Reserved
         </small>
       </footer>
     </div>
