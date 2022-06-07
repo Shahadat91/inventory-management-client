@@ -9,7 +9,6 @@ import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./SignIn.css";
 import {toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 

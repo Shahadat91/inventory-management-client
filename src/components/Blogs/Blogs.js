@@ -4,7 +4,7 @@ const Blogs = () => {
   return (
     <div className="container">
       <div>
-        <h4>Q-1: Difference between javascript and node js.</h4>
+        <h4>Q-1: Difference between between javascript and node js.</h4>
         <p>
           জাভাস্ক্রিপ্ট হচ্ছে একটি programming language যা ওয়েবসাইটে স্ক্রিপ্ট লেখার জন্য ব্যবহার হয়। জাভাস্ক্রিপ্ট শুধুমাত্র ব্রাউজারে চলতে পারে। সাধারণত জাভাস্ক্রিপ্ট ক্লাইন্ট সাইটে বেশি ব্যবহার করা হয়। জাভাস্ক্রিপ্ট এর মাধ্যমে HTML কোড লিখা সম্ভব। জাভাস্ক্রিপ্ট ফ্রন্টএন্ড ডেভেলপমেন্টে ব্যবহার করা হয়। 
         </p>

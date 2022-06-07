@@ -30,7 +30,7 @@ const Banner = () => {
       alt="Third slide"
     />
   </Carousel.Item>
-</Carousel>
+        </Carousel>
     );
 };
 

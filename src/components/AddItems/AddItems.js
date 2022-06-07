@@ -49,7 +49,7 @@ const AddItems = (event) => {
       <input className='mb-3' placeholder='Price' type="number" {...register("price", { required: true })} />
       <input className='mb-3' placeholder='Photo URL' type="text" {...register("img", { required: true })} />
       <input type="submit" value="Add Items" />
-    </form>
+            </form>
         </div>
     );
 };

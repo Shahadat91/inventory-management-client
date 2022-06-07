@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import logo from "../../Images/Logo/logo-98x88.png";
-import './Header.css'
+import "./Header.css";
 const Header = () => {
   const [user] = useAuthState(auth);
   const handleSignOut = () => {
@@ -21,7 +21,9 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto text-center">
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/home">
+              Home
+            </Nav.Link>
             <Nav.Link href="home#inventories">Inventory</Nav.Link>
             <Nav.Link as={Link} to="/blogs">
               Blogs
@@ -43,16 +45,8 @@ const Header = () => {
             )}
 
             {user ? (
-              <button
-                className="btn btn-link text-white text-decoration-none"
-                onClick={handleSignOut}
-              >
-                Sign out
-              </button>
-            ) : (
-              <Nav.Link as={Link} to="/signin">
-                Sign In
-              </Nav.Link>
+              <button className="btn btn-link text-white text-decoration-none" onClick={handleSignOut}>Sign out</button>) :
+              (<Nav.Link as={Link} to="/signin">Sign In</Nav.Link>
             )}
           </Nav>
         </Navbar.Collapse>

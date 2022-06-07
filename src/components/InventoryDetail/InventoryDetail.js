@@ -64,10 +64,6 @@ const updateItem = event =>{
 
 }
 
-
-
-
-
   return (
     <div className="d-flex justify-content-center mt-5">
       <Card style={{ width: "22rem" }}>
